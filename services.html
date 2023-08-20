@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="shortcut icon" type="png" href="images/icon/favicon.png">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Comaptible" content="IE=edge">
+	<title>Education Point</title>
+	<meta name="desciption" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<script>
+		$(window).on('scroll', function () {
+			if ($(window).scrollTop()) {
+				$('nav').addClass('black');
+			} else {
+				$('nav').removeClass('black');
+			}
+		})
+	</script>
+</head>
+
+<body>
+	<header id="header">
+		<nav>
+			<a href="index.html">
+				<div class="logo"><img src="images/icon/logo.jpg" alt="logo"></div>
+			</a>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="team.html">Team</a></li>
+				<li><a class="active" href="services.html">Services</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+			<div class="srch"><input type="text" class="search" placeholder="Search here..."><img
+					src="images/icon/search.png" alt="search" onclick=slide()></div>
+			<a class="get-started" href="login.html">Get Started</a>
+			<img src="images/icon/menu.png" class="menu" onclick="sideMenu(0)" alt="menu">
+		</nav>
+	</header>
+
+
+	<div class="title">
+		<span>Popular Subjects on Education Point</span>
+	</div>
+	<br><br>
+	<div class="course">
+		<center>
+			<div class="cbox">
+				<div class="det"><a href="subjects/jee.html"><img src="images/courses/book.png">JEE Preparation</a>
+				</div>
+				<div class="det"><a href="subjects/gate.html"><img src="images/courses/d1.png">GATE Preparation</a>
+				</div>
+				<div class="det"><a href="subjects/jee.html#sample_papers"><img src="images/courses/paper.png">Sample
+						Papers</a></div>
+				<div class="det"><a href="subjects/quiz.html"><img src="images/courses/d1.png">Daily Quiz</a></div>
+			</div>
+		</center>
+		<div class="cbox">
+			<div class="det"><a href="subjects/computer_courses.html"><img src="images/courses/computer.png">Computer
+					Courses</a></div>
+			<div class="det"><a href="subjects/computer_courses.html#data"><img src="images/courses/data.png">Data
+					Structures</a></div>
+			<div class="det"><a href="subjects/computer_courses.html#algo"><img
+						src="images/courses/algo.png">Algorithm</a></div>
+			<div class="det det-last"><a href="subjects/computer_courses.html#projects"><img
+						src="images/courses/projects.png">Projects</a></div>
+		</div>
+	</div>
+
+	<div class="service-swipe">
+		<div class="diffSection" id="services_section">
+			<center>
+				<p style="font-size: 50px; padding: 100px; padding-bottom: 40px; color: #fff;">Services</p>
+			</center>
+		</div>
+		<a href="subjects/computer_courses.html">
+			<div class="s-card"><img src="images/icon/computer-courses.png">
+				<p>Free Online Computer Courses</p>
+			</div>
+		</a>
+		<a href="subjects/jee.html">
+			<div class="s-card"><img src="images/icon/brainbooster.png">
+				<p>Building Concepts for Competitive Exams</p>
+			</div>
+		</a>
+		<a href="#">
+			<div class="s-card"><img src="images/icon/online-tutorials.png">
+				<p>Online Video Lectures</p>
+			</div>
+		</a>
+		<a href="subjects/jee.html#sample_papers">
+			<div class="s-card"><img src="images/icon/papers.jpg">
+				<p>Sample Papers of Various Competitive Exams</p>
+			</div>
+		</a>
+		<a href="#">
+			<div class="s-card"><img src="images/icon/p3.png">
+				<p>Performance and Ranking Report</p>
+			</div>
+		</a>
+		<a href="#contactus_section">
+			<div class="s-card"><img src="images/icon/discussion.png">
+				<p>Discussion with Our Tutors & Mentors</p>
+			</div>
+		</a>
+		<a href="subjects/quiz.html">
+			<div class="s-card"><img src="images/icon/q1.png">
+				<p>Daily Brain Teasing Questions to Improve IQ</p>
+			</div>
+		</a>
+		<a href="#contactus_section">
+			<div class="s-card"><img src="images/icon/help.png">
+				<p>24x7 Online Support</p>
+			</div>
+		</a>
+	</div>
+
+
+	<footer>
+		<div class="footer-container">
+			<div class="left-col">
+				<img src="images/icon/logo.jpg" style="width: 200px;">
+				<div class="logo"></div>
+				<div class="social-media">
+					<a href="#"><img src="images/icon\fb.png"></a>
+					<a href="#"><img src="images/icon\insta.png"></a>
+					<a href="#"><img src="images/icon\tt.png"></a>
+					<a href="#"><img src="images/icon\ytube.png"></a>
+					<a href="#"><img src="images/icon\linkedin.png"></a>
+				</div><br><br>
+				<p class="rights-text">Copyright © 2023 All Rights Reserved.</p>
+				<br>
+				<p><img src="images/icon/location.png"> IIT Kharagpur <br>Kharagpur West Bengal</p><br>
+				<p><img src="images/icon/phone.png"> +918094056702<br><img src="images/icon/mail.png">&nbsp;
+					Rajpalkot123@gmail.com</p>
+			</div>
+			<div class="right-col">
+				<h1 style="color: #fff">Our Newsletter</h1>
+				<div class="border"></div><br>
+				<p>Enter Your Email to get our News and updates.</p>
+				<form class="newsletter-form">
+					<input class="txtb" type="email" placeholder="Enter Your Email">
+					<input class="btn" type="submit" value="Submit">
+				</form>
+			</div>
+		</div>
+	</footer>
+
+</body>
+
+</html>
